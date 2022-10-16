@@ -17,6 +17,7 @@ namespace calculator
             }
             set
             {
+                /*
                 if (num.Length < 9)
                 {
                     num = value;
@@ -25,6 +26,40 @@ namespace calculator
                 {
                     num = "";
                 }
+                */
+                if (num.Length < 9)
+                {
+                    num = value;
+                }
+                else if (num.Length == 9 && num.IndexOf('-') == -1)//9 numbers w/out minus
+                {
+                    if (value == "-" + num)
+                    {
+                        num = value;
+                    }
+                    else if(value == null || value == "")
+                    {
+                        num = "";
+                    }
+                }
+                else if(num.Length == 9 && num.IndexOf('-') != -1)
+                {
+                    num = value;
+                }
+                else if(num.Length == 10)
+                {
+                    if (value == num.Substring(1, num.Length - 1))//change to plus
+                    {
+                        num = value;
+                    }
+                    else
+                    {
+                        if (value == null || value == "")//able to delete (clear)
+                        {
+                    num = "";
+                }
+            }
+        }
             }
         }
         string num1 = "";
