@@ -20,8 +20,48 @@ namespace calculator
             InitializeComponent();
         }
 
+        public void buttonNumPress(string a) 
+        {
+            /*
+            if (util.Num1 != "" && util.Action == "")
+            {
+
+            }
+            else
+            {
+                if (util.Num != "0")
+                {
+                    util.Num += "0";
+                }
+            }
+            textBox1.Text = util.Num;
+            */
+            if (util.Num1 != "" && util.Action == "")
+            {
+
+            }
+            else
+            {
+                if (util.Num != "0" && a == "0")
+                {
+                    util.Num += "0";
+                }
+                else if (util.Num == "0")
+                {
+                    util.Num = a;
+                }
+                else
+                {
+                    util.Num += a;
+                }
+            }
+            textBox1.Text = util.Num;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
+            buttonNumPress("1");
+            /*
             if (util.Num1 != "" && util.Action == "")
             {
 
@@ -38,170 +78,53 @@ namespace calculator
                 }
             }
             textBox1.Text = util.Num;
+            */
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (util.Num1 != "" && util.Action == "")
-            {
-
-            }
-            else
-            {
-                if (util.Num == "0")
-                {
-                    util.Num = "2";
-                }
-                else
-                {
-                    util.Num += "2";
-                }
-            }
-            textBox1.Text = util.Num;
+            buttonNumPress("2");
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (util.Num1 != "" && util.Action == "")
-            {
-
-            }
-            else
-            {
-                if (util.Num == "0")
-                {
-                    util.Num = "3";
-                }
-                else
-                {
-                    util.Num += "3";
-                }
-            }
-            textBox1.Text = util.Num;
+            buttonNumPress("3");
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (util.Num1 != "" && util.Action == "")
-            {
-
-            }
-            else
-            {
-                if (util.Num == "0")
-                {
-                    util.Num = "4";
-                }
-                else
-                {
-                    util.Num += "4";
-                }
-            }
-            textBox1.Text = util.Num;
+            buttonNumPress("4");
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            if (util.Num1 != "" && util.Action == "")
-            {
-
-            }
-            else
-            {
-                if (util.Num == "0")
-                {
-                    util.Num = "5";
-                }
-                else
-                {
-                    util.Num += "5";
-                }
-            }
-            textBox1.Text = util.Num;
+            buttonNumPress("5");
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            if (util.Num1 != "" && util.Action == "")
-            {
-
-            }
-            else
-            {
-                if (util.Num == "0")
-                {
-                    util.Num = "6";
-                }
-                else
-                {
-                    util.Num += "6";
-                }
-            }
-            textBox1.Text = util.Num;
+            buttonNumPress("6");
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            if (util.Num1 != "" && util.Action == "")
-            {
-
-            }
-            else
-            {
-                if (util.Num == "0")
-                {
-                    util.Num = "7";
-                }
-                else
-                {
-                    util.Num += "7";
-                }
-            }
-            textBox1.Text = util.Num;
+            buttonNumPress("7");
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            if (util.Num1 != "" && util.Action == "")
-            {
-
-            }
-            else
-            {
-                if (util.Num == "0")
-                {
-                    util.Num = "8";
-                }
-                else
-                {
-                    util.Num += "8";
-                }
-            }
-            textBox1.Text = util.Num;
+            buttonNumPress("8");
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            if (util.Num1 != "" && util.Action == "")
-            {
-
-            }
-            else
-            {
-                if (util.Num == "0")
-                {
-                    util.Num = "9";
-                }
-                else
-                {
-                    util.Num += "9";
-                }
-            }
-            textBox1.Text = util.Num;
+            buttonNumPress("9");
         }
 
         private void button0_Click(object sender, EventArgs e)
         {
+            buttonNumPress("0");
+            /*
             if (util.Num1 != "" && util.Action == "")
             {
 
@@ -214,6 +137,7 @@ namespace calculator
                 }
             }
             textBox1.Text = util.Num;
+            */
         }
 
         private void buttonAdd_Click(object sender, EventArgs e)

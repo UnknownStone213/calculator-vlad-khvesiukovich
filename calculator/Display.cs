@@ -56,10 +56,10 @@ namespace calculator
                     {
                         if (value == null || value == "")//able to delete (clear)
                         {
-                    num = "";
+                            num = "";
+                        }
+                    }
                 }
-            }
-        }
             }
         }
         string num1 = "";
