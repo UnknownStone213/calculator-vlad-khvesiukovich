@@ -42,11 +42,11 @@ namespace calculator
             }
             else
             {
-                if (util.Num != "0" && a == "0")
+                if (util.Num != "0" && a == "0")//cant write 0000 (zeros) number
                 {
                     util.Num += "0";
                 }
-                else if (util.Num == "0")
+                else if (util.Num == "0")//change 0 zero to number
                 {
                     util.Num = a;
                 }
@@ -263,7 +263,12 @@ namespace calculator
             else
             {
                 util.Result();
-                if (Convert.ToInt32(util.Num1) > 999999999 || Convert.ToInt32(util.Num1) < -999999999)
+                if (util.Exception != "")
+                {
+                    textBox1.Text = util.Exception;
+                    util.Exception = "";
+                }
+                else if (Convert.ToInt32(util.Num1) > 999999999 || Convert.ToInt32(util.Num1) < -999999999)
                 {
                     util.Action = "";
                     util.Num1 = "";
@@ -280,6 +285,7 @@ namespace calculator
         {
             util.Num = "";
             util.Num1 = "";
+            util.Action = "";
             textBox1.Text = util.Num;
             textBox2.Text = util.Num1;
         }
@@ -288,11 +294,11 @@ namespace calculator
         {
             if (util.Num != "" && util.Num != "0")
             {
-                if (util.Num.Substring(0, 1) == "-")
+                if (util.Num.Substring(0, 1) == "-")//change minus to plus
                 {
                     util.Num = util.Num.Substring(1, util.Num.Length - 1);
                 }
-                else
+                else//change plus to minus
                 {
                     util.Num = util.Num.Insert(0, "-");
                 }
@@ -306,7 +312,12 @@ namespace calculator
             {
                 util.Result();
                 util.Action = "";
-                if (Convert.ToInt32(util.Num1) > 999999999 || Convert.ToInt32(util.Num1) < -999999999)
+                if (util.Exception != "")
+                {
+                    textBox1.Text = util.Exception;
+                    util.Exception = "";
+                }
+                else if (Convert.ToInt32(util.Num1) > 999999999 || Convert.ToInt32(util.Num1) < -999999999)
                 {
                     util.Num1 = "";
                     textBox1.Text = "EXCEEDED";

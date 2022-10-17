@@ -8,7 +8,7 @@ namespace calculator
 {
     public class Util
     {
-        string num = "";
+        string num = "";//number in lower display
         public string Num
         {
             get 
@@ -62,7 +62,7 @@ namespace calculator
                 }
             }
         }
-        string num1 = "";
+        string num1 = "";//number in upper display
         public string Num1 
         {
             get
@@ -80,6 +80,12 @@ namespace calculator
             get { return action; }
             set { action = value; }
         }
+        string exception = "";
+        public string Exception
+        {
+            get { return exception; }
+            set { exception = value; }
+        }
         public void Result() 
         {
             switch (action)
@@ -96,9 +102,18 @@ namespace calculator
                     num1 = Convert.ToString(Convert.ToInt32(num1) * Convert.ToInt32(num));
                     action = "*";
                     break;
-                case "/":// остаток
-                    num1 = Convert.ToString(Convert.ToInt32(num1) / Convert.ToInt32(num));
-                    action = "/";
+                case "/":
+                    try
+                    {
+                        num1 = Convert.ToString(Convert.ToInt32(num1) / Convert.ToInt32(num));
+                        action = "/";
+                    }
+                    catch (DivideByZeroException ex)
+                    {
+                        num1 = "";
+                        action = "";
+                        exception = "NOT/0";
+                    }
                     break;
                 default:
                     break;
