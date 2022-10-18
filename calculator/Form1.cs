@@ -22,20 +22,6 @@ namespace calculator
 
         public void buttonNumPress(string a) 
         {
-            /*
-            if (util.Num1 != "" && util.Action == "")
-            {
-
-            }
-            else
-            {
-                if (util.Num != "0")
-                {
-                    util.Num += "0";
-                }
-            }
-            textBox1.Text = util.Num;
-            */
             if (util.Num1 != "" && util.Action == "")
             {
 
@@ -61,24 +47,6 @@ namespace calculator
         private void button1_Click(object sender, EventArgs e)
         {
             buttonNumPress("1");
-            /*
-            if (util.Num1 != "" && util.Action == "")
-            {
-
-            }
-            else
-            {
-                if (util.Num == "0")
-                {
-                    util.Num = "1";
-                }
-                else
-                {
-                    util.Num += "1";
-                }
-            }
-            textBox1.Text = util.Num;
-            */
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -124,20 +92,6 @@ namespace calculator
         private void button0_Click(object sender, EventArgs e)
         {
             buttonNumPress("0");
-            /*
-            if (util.Num1 != "" && util.Action == "")
-            {
-
-            }
-            else
-            {
-                if (util.Num != "0")
-                {
-                    util.Num += "0";
-                }
-            }
-            textBox1.Text = util.Num;
-            */
         }
 
         private void buttonAdd_Click(object sender, EventArgs e)
