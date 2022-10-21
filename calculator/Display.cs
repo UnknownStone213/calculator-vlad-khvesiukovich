@@ -17,16 +17,6 @@ namespace calculator
             }
             set
             {
-                /*
-                if (num.Length < 9)
-                {
-                    num = value;
-                }
-                else if (num.Length == 9 && (value == null || value == ""))
-                {
-                    num = "";
-                }
-                */
                 if (num.Length < 9)
                 {
                     num = value;

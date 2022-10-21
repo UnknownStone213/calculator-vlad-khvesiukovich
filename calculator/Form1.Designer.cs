@@ -161,62 +161,68 @@
             // 
             // buttonClear
             // 
+            this.buttonClear.BackColor = System.Drawing.Color.Red;
             this.buttonClear.Location = new System.Drawing.Point(126, 254);
             this.buttonClear.Name = "buttonClear";
             this.buttonClear.Size = new System.Drawing.Size(40, 40);
             this.buttonClear.TabIndex = 11;
             this.buttonClear.Text = "C";
-            this.buttonClear.UseVisualStyleBackColor = true;
+            this.buttonClear.UseVisualStyleBackColor = false;
             this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
             // 
             // buttonAdd
             // 
+            this.buttonAdd.BackColor = System.Drawing.Color.Yellow;
             this.buttonAdd.Location = new System.Drawing.Point(172, 116);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(40, 40);
             this.buttonAdd.TabIndex = 12;
             this.buttonAdd.Text = "+";
-            this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.UseVisualStyleBackColor = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // buttonSubtract
             // 
+            this.buttonSubtract.BackColor = System.Drawing.Color.Yellow;
             this.buttonSubtract.Location = new System.Drawing.Point(172, 162);
             this.buttonSubtract.Name = "buttonSubtract";
             this.buttonSubtract.Size = new System.Drawing.Size(40, 40);
             this.buttonSubtract.TabIndex = 13;
             this.buttonSubtract.Text = "-";
-            this.buttonSubtract.UseVisualStyleBackColor = true;
+            this.buttonSubtract.UseVisualStyleBackColor = false;
             this.buttonSubtract.Click += new System.EventHandler(this.buttonSubtract_Click);
             // 
             // buttonMultiply
             // 
+            this.buttonMultiply.BackColor = System.Drawing.Color.Yellow;
             this.buttonMultiply.Location = new System.Drawing.Point(172, 208);
             this.buttonMultiply.Name = "buttonMultiply";
             this.buttonMultiply.Size = new System.Drawing.Size(40, 40);
             this.buttonMultiply.TabIndex = 14;
             this.buttonMultiply.Text = "*";
-            this.buttonMultiply.UseVisualStyleBackColor = true;
+            this.buttonMultiply.UseVisualStyleBackColor = false;
             this.buttonMultiply.Click += new System.EventHandler(this.buttonMultiply_Click);
             // 
             // buttonDivide
             // 
+            this.buttonDivide.BackColor = System.Drawing.Color.Yellow;
             this.buttonDivide.Location = new System.Drawing.Point(172, 254);
             this.buttonDivide.Name = "buttonDivide";
             this.buttonDivide.Size = new System.Drawing.Size(40, 40);
             this.buttonDivide.TabIndex = 15;
             this.buttonDivide.Text = "/";
-            this.buttonDivide.UseVisualStyleBackColor = true;
+            this.buttonDivide.UseVisualStyleBackColor = false;
             this.buttonDivide.Click += new System.EventHandler(this.buttonDivide_Click);
             // 
             // buttonResult
             // 
+            this.buttonResult.BackColor = System.Drawing.Color.Yellow;
             this.buttonResult.Location = new System.Drawing.Point(218, 116);
             this.buttonResult.Name = "buttonResult";
             this.buttonResult.Size = new System.Drawing.Size(40, 178);
             this.buttonResult.TabIndex = 16;
             this.buttonResult.Text = "=";
-            this.buttonResult.UseVisualStyleBackColor = true;
+            this.buttonResult.UseVisualStyleBackColor = false;
             this.buttonResult.Click += new System.EventHandler(this.buttonResult_Click);
             // 
             // textBox1
